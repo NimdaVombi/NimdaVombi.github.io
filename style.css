@@ -1,0 +1,72 @@
+/* Set the default font to Arial */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Style the page header */
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+/* Style the main content area */
+.content {
+  background-color: #fff;
+  color: #333;
+  padding: 20px;
+}
+
+/* Style the links */
+a {
+  color: #333;
+  text-decoration: none;
+  border-bottom: 1px solid #ccc;
+}
+
+a:hover {
+  color: #000;
+  border-bottom: 2px solid #333;
+}
+
+/* Style the buttons */
+button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #000;
+}
+
+/* Style the forms */
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+input[type=submit] {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #000;
+}
