@@ -1,0 +1,26 @@
+/* 3-toned CSS file generated using Sass */
+$primary-color: #ff6347; /* Coral color */
+$secondary-color: darken($primary-color, 10%); /* Darken the primary color by 10% */
+$tertiary-color: lighten($primary-color, 10%); /* Lighten the primary color by 10% */
+
+body {
+  background-color: $primary-color;
+  color: $tertiary-color;
+}
+
+h1 {
+  color: $secondary-color;
+}
+
+a {
+  color: $tertiary-color;
+  &:hover {
+    color: $secondary-color;
+  }
+}
+.text-background {
+  background-color: white;
+  color: black; /* Set the text color */
+  -webkit-background-clip: text; /* Safari/Chrome */
+  background-clip: text; /* Standard syntax */
+}

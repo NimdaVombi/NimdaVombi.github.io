@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Python and HTML Example</title>
+  </head>
+  <body>
+    <h1>Python and HTML Example</h1>
+    <p>Click the button to run the Python script:</p>
+    <button onclick="runPython()">Run Python</button>
+    <script>
+      function runPython() {
+        // Create a new XMLHttpRequest object
+        var xhr = new XMLHttpRequest();
+        
+        // Define the Python script URL
+        var url = "proxy.py";
+        
+        // Open a connection to the Python script
+        xhr.open("GET", url);
+        
+        // Set the response type to "text"
+        xhr.responseType = "text";
+        
+        // When the Python script completes, display the output
+        xhr.onload = function() {
+          var result = xhr.response;
+          alert(result);
+        };
+        
+        // Send the request to the Python script
+        xhr.send();
+      }
+    </script>
+  </body>
+</html>

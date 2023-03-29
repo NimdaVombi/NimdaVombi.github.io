@@ -1,0 +1,11 @@
+/* Plain CSS file with a solid color */
+body {
+  background-color: #333; /* Dark gray color */
+  color: #fff; /* White text color */
+}
+.text-background {
+  background-color: white;
+  color: black; /* Set the text color */
+  -webkit-background-clip: text; /* Safari/Chrome */
+  background-clip: text; /* Standard syntax */
+}
