@@ -5,7 +5,7 @@ body {
 }
 .text-background {
   background-color: white;
-  color: black; /* Set the text color */
+  color: #E1E1E1; /* Set the text color */
   -webkit-background-clip: text; /* Safari/Chrome */
   background-clip: text; /* Standard syntax */
 }
