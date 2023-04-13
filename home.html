@@ -32,7 +32,26 @@ Website under construction
  If you clicked on this from flip, ur a whopper<br>
 </body>
 </html>
-
+<html>
+<head>
+	<title>My Search Engine</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/lunr.js"></script>
+	<script src="search.js"></script>
+</head>
+<body>
+	<h1>My Search Engine</h1>
+	<form id="add-page-form">
+		<label for="title-input">Title:</label>
+		<input type="text" id="title-input" name="title" required>
+		<label for="content-input">Content:</label>
+		<textarea id="content-input" name="content" required></textarea>
+		<button type="submit">Add Page</button>
+	</form>
+	<input type="text" id="search-box" placeholder="Search...">
+	<div id="results"></div>
+</body>
+</html>
 
 
 
