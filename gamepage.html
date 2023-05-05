@@ -1,56 +1,67 @@
-<!DOCTYPE html>
-<link rel="stylesheet" href="subindex.css">
-<html>
-<head>
-	<title>Nimda</title>
-	<style>
-		.taskbar {
-			position: fixed;
-			top: 0;
-			left: 0;
-			width: 70px;
-			height: 100%;
-			background-color: #333;
-			color: #fff;
-			padding: 10px;
-		}
+<link href="https://bouncecss.bookie0.repl.co/bounce.css" rel="stylesheet" type="text/css" />
+<link href="gp.css" rel="stylesheet" type="text/css" />
 
-		.taskbar a {
-			display: block;
-			padding: 10px;
-			color: #fff;
-			text-decoration: none;
-			text-align: center;
-			margin-bottom: 10px;
-			border-bottom: 1px solid #fff;
-			font-size: 10px;
-		}
+You may have to scroll down
+<style>
+  #myFrame {
+    height: calc(100%); /* Subtract 100px for the height of the buttons */
+    width: 100%;
+    border: none; /* Remove the iframe border */
+  }
+  
+  button {
+    
+    border: none; /* Remove the border around the button */
+    margin-right: 10px; /* Add some margin to the right of the button */
+    background-color: #e6e6e6; /* Set the background color of the button */
+    cursor: pointer; /* Change the cursor to a pointer when hovering over the button */
+  }
+  
+  button:hover {
+    background-color: #d9d9d9; /* Change the background color of the button when hovering over it */
+  }
+  
 
-		.taskbar a:hover {
-			background-color: #555;
-		}
+</style>
 
-		.main {
-			position: absolute;
-			top: 0;
-			left: 60px;
-			width: calc(100% - 60px);
-			height: 100%;
-		}
-	</style>
-</head>
-<body>
-	<div class="taskbar">
-		<a href="lang.html" target="iframe">LearnLanguage</a>
-		<a href="sv.html" target="iframe">SuggestedVids</a>
-		<a href="contact.html" target="iframe">BloomGame</a>
-		<a href="Proxy/Site/index.html" target="iframe">Proxy</a>
-	</div>
+<button onclick="document.getElementById('myFrame').src='territorial.io-main/file.html'; hideButtons(this)">
+  <img src="territorial.jpeg" alt="Image 1">
+  <br>
+  Territorial.io <br> Unblocked
+</button>
 
-	<div class="main">
-		<iframe name="iframe" width="100%" height="100%" frameborder="0"></iframe>
-	</div>
-</body>
+<button onclick="document.getElementById('myFrame').src='territorial.io-modded/file.html'; hideButtons(this)">
+  <img src="territorial.jpeg" alt="Image 1">
+  <br>
+  Territorial.io <br> Modded
+</button>
 
-</html>
+<button onclick="document.getElementById('myFrame').src='Slope-Game-main/index.html'; hideButtons(this)">
+  <img src="slope.jpeg" alt="Image 2">
+  <br>
+  Slope Game <br>
+  Unblocked
+</button>
+<button onclick="document.getElementById('myFrame').src='Proxy/Site/Youtube/yt.html'; hideButtons(this)">
+  <img src="youtube.jpeg" alt="Image 1">
+  <br>
+  Youtube <br> Unblocked
+</button>
+<button onclick="document.getElementById('myFrame').src='sv.html'; hideButtons(this)">
+  <img src="video.jpeg" alt="Image 1">
+  <br>
+  Suggested <br> Videos
+</button>
 
+<iframe id="myFrame" src=""></iframe>
+
+<script>
+  function hideButtons(button) {
+    var buttons = document.getElementsByTagName('button');
+    for (var i = 0; i < buttons.length; i++) {
+      if (buttons[i] !== button) { /* Check if the current button is not the clicked button */
+        buttons[i].classList.add('hidden'); /* Add the 'hidden' class to the button */
+      }
+    }
+  }
+</script>
